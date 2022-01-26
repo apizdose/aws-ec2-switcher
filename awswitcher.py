@@ -17,7 +17,6 @@ timezone='Europe/Kiev'
 
 work_hours = work_hours.split('-')
 ec2 = boto3.client('ec2',region, aws_access_key_id=Access_key_ID, aws_secret_access_key=Secret_access_key)
-ec2.stop_instances(InstanceIds=[instance])
 #Return current machine time
 def timer(timezone):
     tzinfo = pytz.timezone(timezone)
