@@ -26,7 +26,7 @@ def timer(timezone):
 
 #On\Off insance
 def switcher(current_time):
-    global runningState
+    
     if current_time == work_hours[0]:
         try:
             #Starting instance
